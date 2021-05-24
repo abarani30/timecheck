@@ -1,17 +1,15 @@
 class TimeCheck:
     def validTime(self, time):
-        if len(time) != 5 or ":" not in time:
-            return False
-        hours = time.split(":")[0]
-        minutes = time.split(":")[1]
-        if len(hours) != 2 or len(minutes) != 2:
+        # سويته بهاي الطريقة بدون كود زايد 
+        try:
+            # هنا ما تحتاج كل -variable- تخليه بسطر واحد
+            hours, minutes = time.split(':')
+        except:
             return False
         else:
-            if int(hours) <= 23 and int(minutes) <= 59:
-                return True
-        return False
-
-
+            # هنا اي حالة ما تطابق الشرط ترجع False
+            return (len(hours) == 2 and len(minutes) == 2 and int(hours) in range(1, 24) and int(minutes) in range(1, 60))
+     
 if __name__ == "__main__":
     myObj = TimeCheck()
     print(myObj.validTime("01:45"))
