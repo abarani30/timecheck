@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
     # How you named your package folder (timecheck)
-    name='timecheck',
+    name='time_check_validity',
     # Chose the same as "name"
     packages=['timecheck'],
     # Start with a small number and increase it with every change you make
@@ -17,7 +17,7 @@ setup(
     # Provide either the link to your github or to your website
     url='https://github.com/abarani30',
     # I explain this later on
-    download_url='',
+    download_url='https://github.com/abarani30/timecheck/archive/refs/tags/v_01.tar.gz',
     # Keywords that define your package best
     keywords=['TIME', 'TIME VALIDITY', 'VALID TIME', 'TIME_VALID',
               'VALID_TIME', 'time'],
@@ -27,8 +27,6 @@ setup(
         # Define that your audience are developers
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
-        # Again, pick a license
-        'License :: MIT License',
         # Specify which python versions that you want to support
         'Programming Language :: Python :: 3',
     ],
