@@ -3,7 +3,7 @@ This package will check the time validity through checking both of hours and min
 
 ## How to install the package?
 
-To install the paackage:<br>
+To install the package:<br>
 
 `pip install time-check-validity`
 
